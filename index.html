@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Happy Cuts | Hair Salon in E-11, Islamabad - Open 24 Hours</title>
+<meta name="description" content="Happy Cuts is a 5-star hair salon in E-11, Islamabad, open 24 hours. Haircuts, beard styling, facials, hair color, keratin treatments and kids haircuts.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#10201f;
+  --ink-2:#172b29;
+  --brass:#d6a74a;
+  --brass-dk:#b88a2e;
+  --paper:#ffffff;
+  --mist:#eef2f0;
+  --text:#1c2a29;
+  --muted:#5d6c6a;
+  --wa:#25D366;
+  --radius:6px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Manrope',system-ui,sans-serif;color:var(--text);background:var(--paper);line-height:1.65;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:3px solid var(--brass);outline-offset:3px}
+h1,h2,h3{font-family:'Barlow Condensed',sans-serif;line-height:1.05;letter-spacing:.01em}
+.wrap{width:min(1160px,92%);margin-inline:auto}
+section{padding:92px 0}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 28px;border-radius:var(--radius);font-weight:700;font-size:.98rem;border:2px solid transparent;cursor:pointer;transition:background .2s,color .2s,border-color .2s;font-family:inherit}
+.btn-brass{background:var(--brass);color:var(--ink)}
+.btn-brass:hover{background:#e6bb62}
+.btn-line{border-color:#fff;color:#fff;background:transparent}
+.btn-line:hover{background:#fff;color:var(--ink)}
+.btn-dark{background:var(--ink);color:#fff}
+.btn-dark:hover{background:var(--ink-2)}
+.sec-head{max-width:640px;margin-bottom:48px}
+.sec-head h2{font-size:clamp(2.2rem,5vw,3.4rem);font-weight:700;color:var(--ink)}
+.sec-head p{color:var(--muted);margin-top:14px}
+.sec-head.center{margin-inline:auto;text-align:center}
+
+/* top bar + header */
+.topbar{background:var(--ink);color:#d7e0de;font-size:.86rem;padding:9px 0}
+.topbar .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.topbar a:hover{color:var(--brass)}
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.97);backdrop-filter:blur(8px);border-bottom:1px solid #e3e9e7}
+.nav{display:flex;align-items:center;justify-content:space-between;height:78px}
+.logo{display:flex;align-items:center;gap:12px}
+.logo-mark{width:44px;height:44px;border-radius:50%;background:var(--ink);color:var(--brass);display:grid;place-items:center}
+.logo-text{font-family:'Barlow Condensed',sans-serif;font-size:1.9rem;font-weight:700;color:var(--ink);line-height:1}
+.logo-text small{display:block;font-family:'Manrope',sans-serif;font-size:.68rem;font-weight:600;color:var(--muted);letter-spacing:.14em;margin-top:3px}
+nav ul{display:flex;gap:34px;list-style:none;align-items:center}
+nav a.link{font-weight:600;font-size:.95rem;color:var(--ink);position:relative;padding:6px 0}
+nav a.link::after{content:"";position:absolute;left:0;bottom:0;width:0;height:2px;background:var(--brass);transition:width .25s}
+nav a.link:hover::after{width:100%}
+.burger{display:none;background:none;border:0;cursor:pointer;padding:8px}
+.burger span{display:block;width:26px;height:2px;background:var(--ink);margin:6px 0;transition:transform .25s,opacity .25s}
+.burger.open span:nth-child(1){transform:translateY(8px) rotate(45deg)}
+.burger.open span:nth-child(2){opacity:0}
+.burger.open span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
+
+/* hero */
+.hero{position:relative;min-height:84vh;display:flex;align-items:center;color:#fff;background:var(--ink) url("https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=1800&q=80") center/cover no-repeat;padding:80px 0}
+.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(95deg,rgba(11,24,23,.92) 15%,rgba(11,24,23,.55) 60%,rgba(11,24,23,.3))}
+.hero .wrap{position:relative}
+.hero-badge{display:inline-flex;align-items:center;gap:10px;border:1px solid rgba(255,255,255,.35);padding:8px 16px;border-radius:40px;font-size:.88rem;font-weight:600;margin-bottom:26px}
+.dot{width:9px;height:9px;border-radius:50%;background:#3ddc84;box-shadow:0 0 0 0 rgba(61,220,132,.7);animation:pulse 2s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 10px rgba(61,220,132,0)}100%{box-shadow:0 0 0 0 rgba(61,220,132,0)}}
+.hero h1{font-size:clamp(3.2rem,9vw,6.4rem);font-weight:700;max-width:760px}
+.hero p{max-width:540px;margin:22px 0 34px;font-size:1.1rem;color:#e0e8e6}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap}
+.hero-stats{display:flex;gap:44px;margin-top:54px;flex-wrap:wrap}
+.hero-stats b{display:block;font-family:'Barlow Condensed',sans-serif;font-size:2.4rem;color:var(--brass);line-height:1}
+.hero-stats span{font-size:.88rem;color:#cfd9d7}
+
+/* services */
+.services{background:var(--mist)}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.card{background:#fff;border-radius:var(--radius);overflow:hidden;box-shadow:0 2px 14px rgba(16,32,31,.07);display:flex;flex-direction:column;transition:transform .25s,box-shadow .25s}
+.card:hover{transform:translateY(-5px);box-shadow:0 10px 28px rgba(16,32,31,.14)}
+.card .img{height:210px;background:var(--ink-2) center/cover no-repeat}
+.card .body{padding:26px 26px 30px}
+.card h3{font-size:1.75rem;color:var(--ink);margin-bottom:8px}
+.card p{color:var(--muted);font-size:.96rem}
+.card .more{display:inline-block;margin-top:16px;font-weight:700;color:var(--brass-dk);font-size:.92rem}
+.card .more:hover{color:var(--ink)}
+
+/* about */
+.about .wrap{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.about-img{position:relative}
+.about-img img{width:100%;height:520px;object-fit:cover;border-radius:var(--radius);background:var(--ink-2)}
+.about-img .tag{position:absolute;right:-18px;bottom:30px;background:var(--brass);color:var(--ink);padding:20px 26px;border-radius:var(--radius);box-shadow:0 8px 24px rgba(0,0,0,.25)}
+.about-img .tag b{display:block;font-family:'Barlow Condensed',sans-serif;font-size:2.6rem;line-height:1}
+.about h2{font-size:clamp(2.2rem,5vw,3.4rem);color:var(--ink);margin-bottom:18px}
+.about p{color:var(--muted);margin-bottom:16px}
+.ticks{list-style:none;margin:22px 0 30px;display:grid;grid-template-columns:1fr 1fr;gap:12px 20px}
+.ticks li{display:flex;gap:10px;font-weight:600;font-size:.95rem;color:var(--ink)}
+.ticks svg{flex:none;margin-top:4px;color:var(--brass-dk)}
+
+/* band */
+.band{background:var(--ink);color:#fff;padding:64px 0}
+.band .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:30px;text-align:center}
+.band b{font-family:'Barlow Condensed',sans-serif;font-size:3rem;color:var(--brass);display:block;line-height:1}
+.band span{color:#c9d4d2;font-size:.95rem}
+
+/* gallery */
+.gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:230px;gap:14px}
+.gallery-grid figure{overflow:hidden;border-radius:var(--radius);background:var(--ink-2)}
+.gallery-grid figure:nth-child(1),.gallery-grid figure:nth-child(6){grid-row:span 2}
+.gallery-grid img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.gallery-grid figure:hover img{transform:scale(1.07)}
+
+/* reviews */
+.reviews{background:var(--mist)}
+.rev-box{display:grid;grid-template-columns:.8fr 1.2fr;gap:50px;align-items:center}
+.score{background:#fff;border-radius:var(--radius);padding:44px 36px;text-align:center;box-shadow:0 2px 14px rgba(16,32,31,.07)}
+.score b{font-family:'Barlow Condensed',sans-serif;font-size:5.6rem;color:var(--ink);line-height:1;display:block}
+.stars{color:var(--brass);font-size:1.6rem;letter-spacing:4px;margin:6px 0 8px}
+.score p{color:var(--muted);margin-bottom:22px}
+.rev-text h2{font-size:clamp(2.2rem,5vw,3.2rem);color:var(--ink);margin-bottom:16px}
+.rev-text p{color:var(--muted);margin-bottom:24px}
+
+/* booking */
+.book{background:var(--ink) url("https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1800&q=70") center/cover;position:relative;color:#fff}
+.book::before{content:"";position:absolute;inset:0;background:rgba(11,24,23,.88)}
+.book .wrap{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.book h2{font-size:clamp(2.4rem,5.4vw,3.8rem);margin-bottom:16px}
+.book p{color:#d5dedc;max-width:440px}
+form{background:#fff;color:var(--text);padding:34px;border-radius:var(--radius);display:grid;gap:14px}
+form label{font-size:.85rem;font-weight:700;color:var(--ink)}
+form input,form select,form textarea{width:100%;padding:13px 14px;border:1px solid #cfd8d6;border-radius:var(--radius);font:inherit;margin-top:5px;background:#fff}
+form input:focus,form select:focus,form textarea:focus{outline:2px solid var(--brass);border-color:var(--brass)}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.btn-wa{background:var(--wa);color:#fff;justify-content:center}
+.btn-wa:hover{background:#1ebe5a}
+
+/* contact */
+.contact-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:40px}
+.info{display:grid;gap:18px;align-content:start}
+.info-item{display:flex;gap:16px;padding:22px;border-radius:var(--radius);background:var(--mist)}
+.info-item .ic{flex:none;width:46px;height:46px;border-radius:50%;background:var(--ink);color:var(--brass);display:grid;place-items:center}
+.info-item h3{font-size:1.4rem;color:var(--ink);margin-bottom:2px}
+.info-item p,.info-item a{color:var(--muted);font-size:.96rem}
+.info-item a:hover{color:var(--brass-dk)}
+.map{border-radius:var(--radius);overflow:hidden;min-height:440px;box-shadow:0 2px 14px rgba(16,32,31,.12)}
+.map iframe{width:100%;height:100%;min-height:440px;border:0;display:block}
+
+/* footer */
+footer{background:#0b1817;color:#b9c6c4;padding:60px 0 26px}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;padding-bottom:36px;border-bottom:1px solid rgba(255,255,255,.1)}
+footer .logo-text{color:#fff}
+footer h4{font-family:'Barlow Condensed',sans-serif;font-size:1.4rem;color:#fff;margin-bottom:14px}
+footer ul{list-style:none;display:grid;gap:8px;font-size:.94rem}
+footer a:hover{color:var(--brass)}
+footer p.small{font-size:.94rem;margin-top:16px;max-width:320px}
+.copy{text-align:center;font-size:.86rem;padding-top:22px}
+
+/* whatsapp sticky */
+.wa-float{position:fixed;right:22px;bottom:22px;z-index:99;display:flex;align-items:center;gap:10px;background:var(--wa);color:#fff;padding:13px 20px 13px 15px;border-radius:50px;font-weight:700;font-size:.95rem;box-shadow:0 8px 24px rgba(0,0,0,.28);transition:transform .2s}
+.wa-float:hover{transform:scale(1.05)}
+.wa-float svg{width:30px;height:30px}
+
+/* simple reveal on scroll */
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s,transform .7s}
+.reveal.show{opacity:1;transform:none}
+
+@media (max-width:980px){
+  .grid-3{grid-template-columns:1fr 1fr}
+  .about .wrap,.rev-box,.book .wrap,.contact-grid{grid-template-columns:1fr}
+  .about-img .tag{right:14px}
+  .band .wrap{grid-template-columns:1fr 1fr}
+  .gallery-grid{grid-template-columns:1fr 1fr}
+  .gallery-grid figure:nth-child(1),.gallery-grid figure:nth-child(6){grid-row:auto}
+  .foot-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:760px){
+  section{padding:68px 0}
+  .burger{display:block}
+  nav{position:absolute;top:100%;left:0;right:0;background:#fff;border-bottom:1px solid #e3e9e7;max-height:0;overflow:hidden;transition:max-height .35s}
+  nav.open{max-height:420px}
+  nav ul{flex-direction:column;align-items:flex-start;gap:0;padding:10px 4%}
+  nav li{width:100%;border-bottom:1px solid #eef2f0}
+  nav a.link{display:block;padding:14px 0}
+  .topbar .wrap{justify-content:center;text-align:center}
+  .grid-3,.ticks,.row2,.foot-grid{grid-template-columns:1fr}
+  .about-img img{height:380px}
+  .wa-float span{display:none}
+  .wa-float{padding:14px}
+  .hero-stats{gap:28px}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+  .reveal{opacity:1;transform:none}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span>12, NPF E 11/4, E-11, Islamabad 44000</span>
+    <span>Open 24 hours &nbsp;|&nbsp; <a href="tel:+923160213803">0316 0213803</a></span>
+  </div>
+</div>
+
+<header>
+  <div class="wrap nav">
+    <a href="#home" class="logo" aria-label="Happy Cuts home">
+      <span class="logo-mark" aria-hidden="true">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.12 15.88M14.47 14.48 20 20M8.12 8.12 12 12"/></svg>
+      </span>
+      <span class="logo-text">Happy Cuts<small>HAIR SALON</small></span>
+    </a>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav id="nav" aria-label="Main">
+      <ul>
+        <li><a class="link" href="#home">Home</a></li>
+        <li><a class="link" href="#services">Services</a></li>
+        <li><a class="link" href="#about">About</a></li>
+        <li><a class="link" href="#gallery">Gallery</a></li>
+        <li><a class="link" href="#reviews">Reviews</a></li>
+        <li><a class="link" href="#contact">Contact</a></li>
+        <li><a class="btn btn-brass" href="#book" style="padding:11px 22px">Book a visit</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="wrap">
+    <div class="hero-badge"><span class="dot"></span> Open now, 24 hours a day</div>
+    <h1>Sharp cuts. Clean shaves. A happy you.</h1>
+    <p>Modern haircuts, beard styling, facials and hair treatments in E-11, Islamabad. Walk in any time, day or night.</p>
+    <div class="hero-cta">
+      <a class="btn btn-brass" href="#book">Book your visit</a>
+      <a class="btn btn-line" href="#services">See our services</a>
+    </div>
+    <div class="hero-stats">
+      <div><b>5.0</b><span>Google rating</span></div>
+      <div><b>24/7</b><span>Always open</span></div>
+      <div><b>6</b><span>Salon services</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <h2>Our services</h2>
+      <p>Everything you need for your hair and grooming, under one roof.</p>
+    </div>
+    <div class="grid-3">
+      <article class="card reveal">
+        <div class="img" style="background-image:url('https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=800&q=75')"></div>
+        <div class="body"><h3>Modern hair cutting</h3><p>Fades, trims, layers and classic cuts in every style, finished to your face shape.</p><a class="more" href="#book">Book this</a></div>
+      </article>
+      <article class="card reveal">
+        <div class="img" style="background-image:url('https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=800&q=75')"></div>
+        <div class="body"><h3>Beard styling and clean shave</h3><p>Precise beard shaping, hot-towel clean shaves and sharp line-ups.</p><a class="more" href="#book">Book this</a></div>
+      </article>
+      <article class="card reveal">
+        <div class="img" style="background-image:url('https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=800&q=75')"></div>
+        <div class="body"><h3>Facial, cleanup and massage</h3><p>Deep cleanup, glow facials and a relaxing massage to reset after a long day.</p><a class="more" href="#book">Book this</a></div>
+      </article>
+      <article class="card reveal">
+        <div class="img" style="background-image:url('https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=75')"></div>
+        <div class="body"><h3>Hair color and highlights</h3><p>Full color, highlights and styling with products that keep your hair healthy.</p><a class="more" href="#book">Book this</a></div>
+      </article>
+      <article class="card reveal">
+        <div class="img" style="background-image:url('https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=800&q=75')"></div>
+        <div class="body"><h3>Protein, keratin and hair treatments</h3><p>Repair dry, damaged or frizzy hair and get a smooth, shiny finish that lasts.</p><a class="more" href="#book">Book this</a></div>
+      </article>
+      <article class="card reveal">
+        <div class="img" style="background-image:url('https://images.unsplash.com/photo-1605497788044-5a32c7078486?auto=format&fit=crop&w=800&q=75')"></div>
+        <div class="body"><h3>Kids haircuts</h3><p>Special care and friendly service so your little ones sit comfortably and leave smiling.</p><a class="more" href="#book">Book this</a></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="wrap">
+    <div class="about-img reveal">
+      <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=1000&q=80" alt="Barber styling a client's hair at Happy Cuts">
+      <div class="tag"><b>24 hrs</b>Open every day</div>
+    </div>
+    <div class="reveal">
+      <h2>A salon that never closes</h2>
+      <p>Happy Cuts is a hair salon in E-11, Islamabad, open 24 hours. Whether it is an early morning before work or a late night after a shift, you can walk in and get a great haircut.</p>
+      <p>Our barbers and stylists take time to listen, then deliver clean, modern results. Every visit is relaxed, friendly and unrushed.</p>
+      <ul class="ticks">
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Open 24 hours</li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Modern styles</li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Kid-friendly service</li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Quality hair products</li>
+      </ul>
+      <a class="btn btn-dark" href="#contact">Find us in E-11</a>
+    </div>
+  </div>
+</section>
+
+<!-- BAND -->
+<div class="band">
+  <div class="wrap">
+    <div><b>5.0</b><span>Rating on Google</span></div>
+    <div><b>24/7</b><span>Walk in any time</span></div>
+    <div><b>6</b><span>Grooming services</span></div>
+    <div><b>E-11</b><span>Islamabad</span></div>
+  </div>
+</div>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <h2>Inside Happy Cuts</h2>
+      <p>A look at the cuts, the chairs and the finish.</p>
+    </div>
+    <div class="gallery-grid">
+      <figure class="reveal show"><img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=900&q=75" alt="Fresh haircut in the barber chair" data-n="0"></figure>
+      <figure class="reveal show"><img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=900&q=75" alt="Barber working on a fade" data-n="1"></figure>
+      <figure class="reveal show"><img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=900&q=75" alt="Salon interior with styling chairs" data-n="2"></figure>
+      <figure class="reveal show"><img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=900&q=75" alt="Beard trim in progress" data-n="3"></figure>
+      <figure class="reveal show"><img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=900&q=75" alt="Stylist finishing a haircut" data-n="4"></figure>
+      <figure class="reveal show"><img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=900&q=75" alt="Hair styling session" data-n="5"></figure>
+      <figure class="reveal show"><img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=900&q=75" alt="Classic men's haircut" data-n="6"></figure>
+      <figure class="reveal show"><img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?auto=format&fit=crop&w=900&q=75" alt="Barber tools and clippers" data-n="7"></figure>
+      <figure class="reveal show"><img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=900&q=75" alt="Hair color and highlights" data-n="8"></figure>
+      <figure class="reveal show"><img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=900&q=75" alt="Hair treatment at the salon" data-n="9"></figure>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews" id="reviews">
+  <div class="wrap rev-box">
+    <div class="score reveal">
+      <b>5.0</b>
+      <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+      <p>7 Google reviews</p>
+      <a class="btn btn-dark" target="_blank" rel="noopener" href="https://share.google/DxkTAp4bYIObcFyTZ">See us on Google</a>
+    </div>
+    <div class="rev-text reveal">
+      <h2>Rated 5 stars by our customers</h2>
+      <p>Every review so far is five stars. Visit our Google profile to read what customers say, then tell us about your own visit.</p>
+      <a class="btn btn-brass" target="_blank" rel="noopener" href="https://share.google/DxkTAp4bYIObcFyTZ">Write a review</a>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING -->
+<section class="book" id="book">
+  <div class="wrap">
+    <div class="reveal">
+      <h2>Book your visit</h2>
+      <p>Pick a service and a time. Your request opens in WhatsApp so we can confirm it with you right away.</p>
+    </div>
+    <form id="bookForm" class="reveal">
+      <div class="row2">
+        <label>Your name<input type="text" id="bName" required autocomplete="name"></label>
+        <label>Phone number<input type="tel" id="bPhone" required autocomplete="tel"></label>
+      </div>
+      <label>Service
+        <select id="bService">
+          <option>Modern hair cutting</option>
+          <option>Beard styling and clean shave</option>
+          <option>Facial, cleanup and massage</option>
+          <option>Hair color and highlights</option>
+          <option>Protein, keratin and hair treatment</option>
+          <option>Kids haircut</option>
+        </select>
+      </label>
+      <div class="row2">
+        <label>Date<input type="date" id="bDate" required></label>
+        <label>Time<input type="time" id="bTime" required></label>
+      </div>
+      <label>Notes (optional)<textarea id="bNote" rows="2"></textarea></label>
+      <button class="btn btn-wa" type="submit">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 0 0-8.4 15.1L2 22l5-1.6A9.9 9.9 0 1 0 12.04 2Zm5.8 14c-.25.7-1.4 1.3-1.95 1.4-.5.1-1.1.1-1.8-.1a16 16 0 0 1-1.6-.6c-2.8-1.2-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 .95-2.3c.25-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.3.5-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.1.1.6-.1 1.3Z"/></svg>
+        Send on WhatsApp
+      </button>
+    </form>
+  </div>
+</section>
+
+<!-- CONTACT + MAP -->
+<section id="contact">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <h2>Visit us in E-11</h2>
+      <p>Find us on the map or call any time. We are open 24 hours.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="info">
+        <div class="info-item reveal">
+          <span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span>
+          <div><h3>Address</h3><p>12, NPF E 11/4, E-11,<br>Islamabad 44000</p></div>
+        </div>
+        <div class="info-item reveal">
+          <span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg></span>
+          <div><h3>Phone</h3><a href="tel:+923160213803">0316 0213803</a></div>
+        </div>
+        <div class="info-item reveal">
+          <span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></span>
+          <div><h3>Hours</h3><p>Open 24 hours, every day</p></div>
+        </div>
+        <a class="btn btn-brass" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=Happy+Cuts+12+NPF+E+11/4+E-11+Islamabad">Get directions</a>
+      </div>
+      <div class="map reveal">
+        <iframe title="Happy Cuts location on Google Maps" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen
+          src="https://maps.google.com/maps?q=Happy%20Cuts%2C%2012%20NPF%20E%2011%2F4%20E-11%2C%20Islamabad&t=&z=16&ie=UTF8&iwloc=&output=embed"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a href="#home" class="logo"><span class="logo-text">Happy Cuts<small>HAIR SALON</small></span></a>
+        <p class="small">Modern hair salon in E-11, Islamabad. Open 24 hours.</p>
+      </div>
+      <div>
+        <h4>Quick links</h4>
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>12, NPF E 11/4, E-11, Islamabad</li>
+          <li><a href="tel:+923160213803">0316 0213803</a></li>
+          <li>Open 24 hours</li>
+        </ul>
+      </div>
+    </div>
+    <p class="copy">&copy; <span id="yr"></span> Happy Cuts. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- Sticky WhatsApp button -->
+<a class="wa-float" id="waFloat" target="_blank" rel="noopener" aria-label="Chat with Happy Cuts on WhatsApp"
+   href="https://wa.me/923160213803?text=Hello%20Happy%20Cuts%2C%20I%20would%20like%20to%20book%20an%20appointment.">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 0 0-8.4 15.1L2 22l5-1.6A9.9 9.9 0 1 0 12.04 2Zm5.8 14c-.25.7-1.4 1.3-1.95 1.4-.5.1-1.1.1-1.8-.1a16 16 0 0 1-1.6-.6c-2.8-1.2-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 .95-2.3c.25-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.3.5-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.1.1.6-.1 1.3Z"/></svg>
+  <span>Chat on WhatsApp</span>
+</a>
+
+<script>
+(function(){
+  var WA = "923160213803";
+
+  // mobile menu
+  var burger = document.getElementById('burger'), nav = document.getElementById('nav');
+  burger.addEventListener('click', function(){
+    var open = nav.classList.toggle('open');
+    burger.classList.toggle('open', open);
+    burger.setAttribute('aria-expanded', open);
+  });
+  nav.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){
+      nav.classList.remove('open'); burger.classList.remove('open');
+      burger.setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  // booking form -> WhatsApp
+  var d = document.getElementById('bDate');
+  d.min = new Date().toISOString().split('T')[0];
+  document.getElementById('bookForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    var msg = "Hello Happy Cuts, I would like to book an appointment.\n" +
+      "Name: " + document.getElementById('bName').value + "\n" +
+      "Phone: " + document.getElementById('bPhone').value + "\n" +
+      "Service: " + document.getElementById('bService').value + "\n" +
+      "Date: " + d.value + "\n" +
+      "Time: " + document.getElementById('bTime').value + "\n" +
+      "Notes: " + (document.getElementById('bNote').value || "None");
+    window.open("https://wa.me/" + WA + "?text=" + encodeURIComponent(msg), "_blank");
+  });
+
+  // scroll reveal
+  var items = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if (en.isIntersecting) { en.target.classList.add('show'); io.unobserve(en.target); }
+      });
+    }, {threshold:.12});
+    items.forEach(function(el){ io.observe(el); });
+  } else {
+    items.forEach(function(el){ el.classList.add('show'); });
+  }
+
+  // image fallback so a missing photo never leaves a blank gap
+  var pool = [
+    "photo-1585747860715-2ba37e788b70","photo-1503951914875-452162b0f3f1","photo-1622286342621-4bd786c2447c",
+    "photo-1599351431202-1e0f0137899a","photo-1621605815971-fbc98d665033","photo-1560066984-138dadb4c035",
+    "photo-1521590832167-7bcbfaa6381f","photo-1605497788044-5a32c7078486"
+  ];
+  document.querySelectorAll('.gallery-grid img').forEach(function(img){
+    var tries = 0, n = parseInt(img.dataset.n || '0', 10);
+    img.addEventListener('error', function(){
+      tries++;
+      if (tries === 1) {
+        img.src = "https://images.unsplash.com/" + pool[(n + 3) % pool.length] + "?auto=format&fit=crop&w=900&q=70";
+      } else if (tries === 2) {
+        img.src = "https://loremflickr.com/900/700/barber,haircut?lock=" + (n + 1);
+      } else {
+        img.removeAttribute('src');
+        img.parentNode.style.background = "linear-gradient(135deg,#172b29,#10201f)";
+      }
+    });
+  });
+
+  document.getElementById('yr').textContent = new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
